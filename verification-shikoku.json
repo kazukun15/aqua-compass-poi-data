@@ -1,0 +1,42 @@
+{
+  "count": 15562,
+  "categories": {
+    "RESTAURANT": 2698,
+    "CONVENIENCE_STORE": 1329,
+    "CAFE": 630,
+    "TOILET": 1273,
+    "FUEL": 820,
+    "PARKING": 8812
+  },
+  "access": {
+    "unknown": 13358,
+    "public": 452,
+    "customers": 1752
+  },
+  "unnamed": 10169,
+  "compressedBytes": 335802,
+  "expandedBytes": 2384996,
+  "sha256": "9ac0d82a1c99f65847b29a85092bf3a9891da0f0ed6997128802a15dfd9c3471",
+  "metadata": {
+    "formatVersion": 1,
+    "packageId": "shikoku-osm-snapshot",
+    "version": 2026102701,
+    "regionName": "四国抽出・部分収録",
+    "createdAt": "2026-10-27T21:23:59Z",
+    "bounds": {
+      "south": 32.22959,
+      "west": 131.7698,
+      "north": 34.65151,
+      "east": 135.1794
+    },
+    "sourceName": "OpenStreetMap contributors via Geofabrik Shikoku extract",
+    "sourceUrl": "https://download.geofabrik.de/asia/japan/shikoku.html",
+    "licenseName": "ODbL 1.0",
+    "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap contributors",
+    "completeness": "source_snapshot"
+  },
+  "sourcePolygonVertices": 88,
+  "sourcePolygonHoles": 0,
+  "warning": "元データの部分収録。矩形やポリゴン内の全施設・入口・営業・車両利用可能性は保証しない。"
+}

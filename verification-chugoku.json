@@ -1,0 +1,42 @@
+{
+  "count": 30539,
+  "categories": {
+    "RESTAURANT": 6251,
+    "CAFE": 1232,
+    "CONVENIENCE_STORE": 2397,
+    "TOILET": 1743,
+    "FUEL": 953,
+    "PARKING": 17963
+  },
+  "access": {
+    "unknown": 25719,
+    "public": 1191,
+    "customers": 3629
+  },
+  "unnamed": 18886,
+  "compressedBytes": 663059,
+  "expandedBytes": 4708447,
+  "sha256": "00f5fafd567363d2d0841792c14f030de87a253691ca6a6fe186ff8cac16a764",
+  "metadata": {
+    "formatVersion": 1,
+    "packageId": "chugoku-osm-snapshot",
+    "version": 2026102701,
+    "regionName": "中国地方抽出・部分収録",
+    "createdAt": "2026-10-27T21:23:59Z",
+    "bounds": {
+      "south": 33.54225,
+      "west": 129.8975,
+      "north": 36.9681,
+      "east": 134.5244
+    },
+    "sourceName": "OpenStreetMap contributors via Geofabrik Chugoku extract",
+    "sourceUrl": "https://download.geofabrik.de/asia/japan/chugoku.html",
+    "licenseName": "ODbL 1.0",
+    "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap contributors",
+    "completeness": "source_snapshot"
+  },
+  "sourcePolygonVertices": 116,
+  "sourcePolygonHoles": 0,
+  "warning": "元データの部分収録。矩形やポリゴン内の全施設・入口・営業・車両利用可能性は保証しない。"
+}
