@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "R33": 9162,
+    "R34": 7506,
+    "R38": 5385
+  },
+  "dataIndexSha256": "d0a7be927efc6184ecd7b031f1d5b983ed1bfa86ce10e9ff3f69a82accd1817f",
+  "dataMonth": "202609",
+  "edition": "202611010000",
+  "kind": "monthly_registered_road_restrictions_not_live",
+  "licenseUrl": "https://www.jartic.or.jp/d/opendata/riyou_kiyaku.pdf",
+  "path": "restrictions/jartic-202611010000.gz",
+  "regions": {
+    "R33": {
+      "archiveSha256": "6895fab48a270cf7d35c5cdd89a8293624b5c8263e1f406ee1066dc8ea28df6f",
+      "archiveUrl": "https://www.jartic.or.jp/d/opendata/202611010000/typeD_okayama.zip",
+      "csvByType": {
+        "11": 1211,
+        "12": 7627,
+        "4": 2,
+        "5": 353
+      },
+      "records": 9162,
+      "simpleScheduleWithDirection": 680
+    },
+    "R34": {
+      "archiveSha256": "fba50d08a70150e9654c9175c9dba785214b12364215079198e08980f65e566d",
+      "archiveUrl": "https://www.jartic.or.jp/d/opendata/202611010000/typeD_hiroshima.zip",
+      "csvByType": {
+        "11": 1826,
+        "12": 5439,
+        "5": 644
+      },
+      "records": 7506,
+      "simpleScheduleWithDirection": 742
+    },
+    "R38": {
+      "archiveSha256": "7e310e3be0b02996dac08ffb2a7706fdbc93e2013c2678904a98b0a9e24213da",
+      "archiveUrl": "https://www.jartic.or.jp/d/opendata/202611010000/typeD_ehime.zip",
+      "csvByType": {
+        "11": 608,
+        "12": 4518,
+        "4": 262
+      },
+      "records": 5385,
+      "simpleScheduleWithDirection": 326
+    }
+  },
+  "releaseDate": "2026-11-01",
+  "retrievedDateJst": "2026-11-22",
+  "schemaVersion": 1,
+  "sha256": "69759e85d421fc13eeaabfad4f5ee9060a722974ece5374003ee657d0bf5dcbe",
+  "sizeBytes": 477905,
+  "source": "JARTIC交通規制情報をAQUA COMPASSが抽出・加工",
+  "sourceUrl": "https://www.jartic.or.jp/service/opendata/"
+}

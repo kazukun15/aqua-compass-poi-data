@@ -1,0 +1,39 @@
+name: Update JARTIC monthly road restrictions
+
+on:
+  # 09:37 JST. The index is small, so delayed releases are picked up on the next run.
+  schedule:
+    - cron: '37 0 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-road-restrictions.yml'
+      - 'tools/restrictions/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aqua-monthly-road-restrictions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Run offline data and rollback tests
+        run: python3 -m unittest discover -s tools/restrictions -p 'test_*.py'
+      - name: Verify and prepare the most recent pilot package
+        run: python3 tools/restrictions/update_jartic.py --output .
+      - name: Publish only verified, changed restriction files
+        shell: bash
+        run: |
+          edition=$(python3 -c 'import json; print(json.load(open("restrictions/manifest.json"))["edition"])')
+          [[ "$edition" =~ ^20[0-9]{10}$ ]] || exit 1
+          git add -- restrictions/manifest.json "restrictions/jartic-$edition.gz" "restrictions/metadata-$edition.json"
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Update verified JARTIC road restrictions $edition"
+          git push

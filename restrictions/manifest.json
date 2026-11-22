@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "R33": 9162,
+    "R34": 7506,
+    "R38": 5385
+  },
+  "dataMonth": "202609",
+  "edition": "202611010000",
+  "kind": "monthly_registered_road_restrictions_not_live",
+  "licenseUrl": "https://www.jartic.or.jp/d/opendata/riyou_kiyaku.pdf",
+  "path": "restrictions/jartic-202611010000.gz",
+  "releaseDate": "2026-11-01",
+  "schemaVersion": 1,
+  "sha256": "69759e85d421fc13eeaabfad4f5ee9060a722974ece5374003ee657d0bf5dcbe",
+  "sizeBytes": 477905,
+  "sourceUrl": "https://www.jartic.or.jp/service/opendata/"
+}
